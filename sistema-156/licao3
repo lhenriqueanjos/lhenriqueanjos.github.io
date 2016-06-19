@@ -1,6 +1,6 @@
 <h3>COMO SE CADASTRAR</h3>
 
-<p>1. Acesse o site oficial "central 156" (<a href="http://www.central156.org.br/" target="_new">http://www.central156.org.br/</a>), clique em "Cadastre-se". Veja o exemplo abaixo:</p>
+<p>1. Acesse o site oficial "Central 156" (<a href="http://www.central156.org.br/" target="_new">http://www.central156.org.br/</a>), clique em "Cadastre-se". Veja o exemplo abaixo:</p>
 
 <p>
 	<img class="img-responsive center-block" src="/sistema-156/resources/images/cadastro.png"
@@ -18,7 +18,7 @@
 	<li>Endereço completo</li>
 	<li>Senha</li>
 </ul>
-Nesta fase do cadastro, todos os campos são de preenchimento obrigatório.</p>
+Nesta fase do cadastro, todos os campos são de preenchimento obrigatório, exceto o CEP.</p>
 
 <img class="img-responsive center-block" src="/sistema-156/resources/images/cadastro-tela.png"
 	alt="Tela de cadastro.">
@@ -42,7 +42,7 @@ Nesta fase do cadastro, todos os campos são de preenchimento obrigatório.</p>
 
 <p>Basta clicar em “Meus dados” para alterar  suas informações.</p>
 
-<p>Nesta tela, você poderá abrir  e consultar solicitaçõe, editar dados cadastrais e alterar senha.</p>
+<p>Na tela inicial do sistema, você poderá abrir e consultar solicitações, editar dados cadastrais e alterar a senha.</p>
 
 <img class="img-responsive center-block" src="/sistema-156/resources/images/solicitacoes.png"
 	alt="Tela de solicitações.">
