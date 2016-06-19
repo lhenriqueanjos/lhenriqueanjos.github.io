@@ -83,15 +83,15 @@ function alternarBotoesPaginador() {
 function irProximaPagina() {
 	var proximaPagina = paginaAtual + 1;
 	var link = $("ul.nav-pills li:nth-child(" + proximaPagina + ") a").attr("href");
-	// location.href = link;
-	// location.reload();
+	location.href = link;
+	location.reload();
 }
 
 function irPaginaAnterior() {
 	var paginaAnterior = paginaAtual - 1;
 	var link = $("ul.nav-pills li:nth-child(" + paginaAnterior + ") a").attr("href");
-	// location.href = link;
-	// location.reload();
+	location.href = link;
+	location.reload();
 }
 
 function revelarRespostas() {
