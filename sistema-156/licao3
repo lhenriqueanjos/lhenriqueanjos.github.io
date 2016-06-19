@@ -1,0 +1,48 @@
+<h3>COMO SE CADASTRAR</h3>
+
+<p>1. Acesse o site oficial "central 156" (<a href="http://www.central156.org.br/" target="_new">http://www.central156.org.br/</a>), clique em "Cadastre-se". Veja o exemplo abaixo:</p>
+
+<p>
+	<img class="img-responsive center-block" src="/sistema-156/resources/images/cadastro.png"
+		alt="Tela inicial da Central 156 com localização do link para se cadastrar em destaque.">
+</p>
+
+<p>2. Preencha os dados solicitados:
+<ul>
+	<li>Nome completo</li>
+	<li>CPF</li>
+	<li>Gênero</li>
+	<li>Data de nascimento</li>
+	<li>Email</li>
+	<li>Telefones para contato</li>
+	<li>Endereço completo</li>
+	<li>Senha</li>
+</ul>
+Nesta fase do cadastro, todos os campos são de preenchimento obrigatório.</p>
+
+<img class="img-responsive center-block" src="/sistema-156/resources/images/cadastro-tela.png"
+	alt="Tela de cadastro.">
+
+<p>3. Feito o cadastro, você receberá via e-mail um link de validação. Ao clicar neste link, seu cadastro será concluído com sucesso.</p>
+
+<img class="img-responsive center-block" src="/sistema-156/resources/images/cadastro-sucesso.png"
+	alt="Tela mostrando a mensagem de cadastro realizado com sucesso.">
+
+<p>4. Ao finalizar seu cadastro,você poderá acessar sua conta em "clicando aqui" destacado no campo.</p>
+
+<img class="img-responsive center-block" src="/sistema-156/resources/images/cadastro-ativar.png"
+	alt="Tela com link para ativação da conta.">
+
+<p>5. Para acessar sua conta, faça seu login inserindo seu CPF e senha, depois aperte em "ENTRAR".</p>
+
+<img class="img-responsive center-block" src="/sistema-156/resources/images/login.png"
+	alt="Tela de login.">
+
+<p>6. A qualquer momento, você poderá editar seu cadastro.</p>
+
+<p>Basta clicar em “Meus dados” para alterar  suas informações.</p>
+
+<p>Nesta tela, você poderá abrir  e consultar solicitaçõe, editar dados cadastrais e alterar senha.</p>
+
+<img class="img-responsive center-block" src="/sistema-156/resources/images/solicitacoes.png"
+	alt="Tela de solicitações.">

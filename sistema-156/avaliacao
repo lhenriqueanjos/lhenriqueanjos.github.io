@@ -1,0 +1,164 @@
+<!--
+Para que serve
+	registrar solicitações e pedir informações sobre as demandas da prefeitura
+quais são os dados necessários para chat online
+	nome completo, e-mail e assunto
+Qual o prazo máximo para encaminhamento da solicitação ao setor responsável
+	72h
+ao pequisar as solicitações, qual a maneira correta de visualizar os detalhes
+	clicar no protocolo
+marque a opção que representa uma das finalidades do atendimento online
+	atendimento imediato
+Quais órgãos da prefeitura são integrados à Central 156?
+	todos
+
+lógica:
+	para cada "div.resposta", se o contiver a class "correta", mostrar o glyph
+	para cada "div.resposta", se o input estiver checked, mostrar o glyph
+-->
+
+<h3>Questionário</h3>
+
+<p>Para avaliar seu entendimento sobre curso, selecione a opção correta para cada questão abaixo.</p>
+
+<div class="questao">
+	<label>Para qual finalidade é mais adequado entrar em contato com a Central 156?</label>
+	<div class="radio resposta correta">
+		<label>
+			<input type="radio" name="radQ1" id="q1op1">
+			Registrar solicitações e pedir informações sobre as demandas da prefeitura. <span class="glyphicon glyphicon-ok" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ1" id="q1op2">
+			Entrar em contato direto com os órgãos da prefeitura. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ1" id="q1op3">
+			Enviar sugestões para criação de leis que eu considero importantes. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+</div>
+
+<div class="questao">
+	<label>Quais dados o usuário precisa informar para utilizar o atendimento online?</label>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ2" id="q2op1">
+			Título de eleitor e assunto. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ2" id="q2op2">
+			CPF, endereço e asunto. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta correta">
+		<label>
+			<input type="radio" name="radQ2" id="q2op3">
+			Nome completo, e-mail e assunto. <span class="glyphicon glyphicon-ok" style="display: none;"></span>
+		</label>
+	</div>
+</div>
+
+<div class="questao">
+	<label>Qual o prazo máximo para encaminhamento da solicitação ao setor responsável?</label>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ3" id="q3op1">
+			24 horas. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta correta">
+		<label>
+			<input type="radio" name="radQ3" id="q3op2">
+			72 horas. <span class="glyphicon glyphicon-ok" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ3" id="q3op3">
+			A solicitação é encaminhada automaticamente para o setor responsável. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+</div>
+
+<div class="questao">
+	<label>Ao pequisar as solicitações registradas, qual a maneira correta de visualizar os detalhes de uma delas?</label>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ4" id="q4op1">
+			Marcar a solicitação e clicar em visualizar. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ4" id="q4op2">
+			Deixar o cursor do mouse sobre a data da solicitação. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta correta">
+		<label>
+			<input type="radio" name="radQ4" id="q4op3">
+			Clicar no número do protocolo da solicitação. <span class="glyphicon glyphicon-ok" style="display: none;"></span>
+		</label>
+	</div>
+</div>
+
+<div class="questao">
+	<label>Marque a opção que representa uma das finalidades do atendimento online.</label>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ5" id="q5op1">
+			Dar acesso a informações que não estão disponíveis por meio de solicitação. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta correta">
+		<label>
+			<input type="radio" name="radQ5" id="q5op2">
+			Prover atendimento imediato para uma questão urgente. <span class="glyphicon glyphicon-ok" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ5" id="q5op3">
+			Aumentar a chance da solicitação ser atendida. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+</div>
+
+<div class="questao">
+	<label>Quais órgãos da prefeitura são integrados à Central 156?</label>
+	<div class="radio resposta correta">
+		<label>
+			<input type="radio" name="radQ6" id="q6op1">
+			Todos os órgãos da prefeitura. <span class="glyphicon glyphicon-ok" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ6" id="q6op2">
+			Órgãos responsáveis por transporte, trânsito e coleta de lixo. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+	<div class="radio resposta">
+		<label>
+			<input type="radio" name="radQ6" id="q6op3">
+			Órgãos responsáveis por saúde, educação e segurança. <span class="glyphicon glyphicon-remove" style="display: none;"></span>
+		</label>
+	</div>
+</div>
+
+<div class="botoes-questionario">
+	<a class="btn btn-default" id="btnRevelarRespostas" onclick="revelarRespostas()">
+		<span class="glyphicon glyphicon-check" aria-hidden="true" title="Concluir avaliação e ver respostas."></span> Concluir
+	</a>
+
+	<a class="btn btn-default" id="btnLimparRespostas" onclick="limparAvaliacao()">
+		<span class="glyphicon glyphicon-repeat" aria-hidden="true" title="Limpar respostas da avaliação."></span> Limpar
+	</a>
+</div>

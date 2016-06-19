@@ -1,0 +1,18 @@
+<h3>COMO REGISTRAR UMA SOLICITAÇÃO</h3>
+
+<p>1. Vá em "Abrir solicitação" situada no canto superior esquerdo da página,  e em seguida aperte em "Ok entendi, prosseguir". Importante ler com atenção as instruções.</p>
+
+<img class="img-responsive center-block" src="/sistema-156/resources/images/solicitacao-inicio.png"
+	alt="Tela de avisos sobre a abertura de solicitações.">
+
+<p>2. Indique se "sim" ou que "não" o lugar da solicitação é o mesmo do seu endereço cadastrado  . Complemente com as ruas transversais para melhor localização, e logo em seguida vá em "Prosseguir".</p>
+
+<img class="img-responsive center-block" src="/sistema-156/resources/images/solicitacao-localizacao.png"
+	alt="Tela na qual o usuário informa o local referente à solicitação.">
+
+<p>3. Indique qual é o tipo de serviço que irá ser solicitado, descreva-o detalhadamente, escolha uma foto da ocorrência (a imagem não é obrigatória) e por fim aperte em "Prosseguir".</p>
+
+<img class="img-responsive center-block" src="/sistema-156/resources/images/solicitacao-tipo-servico.png"
+	alt="Tela na qual o usuário informa o tipo de serviço referente à solicitação.">
+
+<p>4. Pronto, sua solicitação foi registrada.  Neste ultimo passo, uma confirmação é enviada para seu email e é gerado um número de protocolo, no qual poderá ser usado para consultadas posteriormente.</p>

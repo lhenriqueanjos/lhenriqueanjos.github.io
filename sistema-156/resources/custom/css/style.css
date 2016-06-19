@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5 {
+	padding-bottom: 6pt;
+	padding-top: 6pt;
+}
+
+p {
+	padding-bottom: 6pt;
+	line-height: 1.8;
+}
+
+.panel img {
+	width: 80%;
+	margin-bottom: 18pt;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.breadcrumb a {
+	text-decoration: underline; 
+}
+
+.questao {
+	margin-bottom: 12pt;
+	color: #4a4a4a;
+}
+
+.botoes-questionario {
+	width: 100%;
+	text-align: center;
+}
