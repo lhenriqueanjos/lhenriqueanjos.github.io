@@ -1,25 +1,6 @@
-<!--
-Para que serve
-	registrar solicitações e pedir informações sobre as demandas da prefeitura
-quais são os dados necessários para chat online
-	nome completo, e-mail e assunto
-Qual o prazo máximo para encaminhamento da solicitação ao setor responsável
-	72h
-ao pequisar as solicitações, qual a maneira correta de visualizar os detalhes
-	clicar no protocolo
-marque a opção que representa uma das finalidades do atendimento online
-	atendimento imediato
-Quais órgãos da prefeitura são integrados à Central 156?
-	todos
-
-lógica:
-	para cada "div.resposta", se o contiver a class "correta", mostrar o glyph
-	para cada "div.resposta", se o input estiver checked, mostrar o glyph
--->
-
 <h3>Questionário</h3>
 
-<p>Para avaliar seu entendimento sobre curso, selecione a opção correta para cada questão abaixo.</p>
+<p>Para avaliar seu entendimento sobre o curso, selecione a opção correta para cada questão abaixo.</p>
 
 <div class="questao">
 	<label>Para qual finalidade é mais adequado entrar em contato com a Central 156?</label>
