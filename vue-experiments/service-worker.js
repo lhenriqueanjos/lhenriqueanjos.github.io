@@ -27,3 +27,5 @@ workbox.core.setCacheNameDetails({prefix: "vue-experiments"});
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerRoute("**/lazyLoadedView.*", workbox.strategies.networkFirst(), 'GET');
