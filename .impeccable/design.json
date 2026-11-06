@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-06T15:27:00.000Z",
+  "title": "Design System: Professional Website",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Cobalto Arquitetônico", "canonical": "#0F4C81", "tonalRamp": ["#051829", "#0A365D", "#0F4C81", "#1E68A8", "#388ED4", "#70AFF0", "#B8D9FB", "#EBF4FD"] },
+      "accent": { "role": "accent", "displayName": "Azul Técnico", "canonical": "#0284C7", "tonalRamp": ["#012B40", "#03486E", "#0284C7", "#38BDF8", "#7DD3FC", "#BAE6FD", "#E0F2FE", "#F0F9FF"] },
+      "neutral-bg": { "role": "neutral", "displayName": "Mineral Claro", "canonical": "#F8F9FA", "tonalRamp": ["#0F172A", "#1E293B", "#334155", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0", "#F8F9FA"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Epilogue Display", "purpose": "Títulos hero e impacto imediato." },
+      "body": { "displayName": "Figtree Body", "purpose": "Leitura contínua editorial e parágrafos." },
+      "label": { "displayName": "Fira Code Mono", "purpose": "Metadados, códigos e tags de tecnologia." }
+    },
+    "shadows": [
+      { "name": "shadow-sm", "value": "0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.04)", "purpose": "Superfícies estáticas e repouso." },
+      { "name": "shadow-md", "value": "0 4px 16px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03)", "purpose": "Elevação em hover de cards e botões." }
+    ],
+    "motion": [
+      { "name": "transition-normal", "value": "250ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Transições de hover e foco." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "992px" },
+      { "name": "xl", "value": "1200px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão Primário",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação prioritária de contato e navegação.",
+      "html": "<button class=\"ds-btn-primary\">Iniciar Contato</button>",
+      "css": ".ds-btn-primary { background: #0F4C81; color: #FFFFFF; padding: 12px 24px; font-weight: 600; font-size: 0.95rem; border-radius: 8px; border: none; cursor: pointer; transition: background 0.2s, transform 0.2s; } .ds-btn-primary:hover { background: #0A365D; transform: translateY(-1px); }"
+    },
+    {
+      "name": "Botão Secundário",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação de apoio e consulta de histórico.",
+      "html": "<button class=\"ds-btn-secondary\">Ver Trajetória</button>",
+      "css": ".ds-btn-secondary { background: #FFFFFF; color: #0F172A; border: 1px solid #CBD5E1; padding: 12px 24px; font-weight: 600; font-size: 0.95rem; border-radius: 8px; cursor: pointer; transition: border-color 0.2s, color 0.2s; } .ds-btn-secondary:hover { border-color: #0F4C81; color: #0F4C81; }"
+    },
+    {
+      "name": "Card de Conteúdo",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Container padrão de histórico e competências.",
+      "html": "<div class=\"ds-card\"><h4 class=\"ds-card-title\">Líder Técnico & Engenheiro Sênior</h4><p class=\"ds-card-body\">Liderança técnica e arquitetura de sistemas distribuídos.</p></div>",
+      "css": ".ds-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(15,23,42,0.04); } .ds-card-title { font-size: 1.15rem; font-weight: 700; color: #0F172A; margin-bottom: 8px; } .ds-card-body { font-size: 0.95rem; color: #334155; line-height: 1.6; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Architectural Workshop",
+    "overview": "O sistema visual expressa a maturidade, método e precisão de um engenheiro de software sênior e líder técnico. Ele rejeita tanto o cinzento anônimo de templates corporativos quanto os ornamentos desnecessários. Toda decisão cromática e estrutural responde ao princípio de clareza, durabilidade e densidade funcional.",
+    "keyCharacteristics": [
+      "Fundo mineral claro com partículas dinâmicas de baixa opacidade em segundo plano.",
+      "Cartões assimétricos com bordas milimétricas e metadados estruturados.",
+      "Tipografia com forte contraste de escala, ritmo generoso e sem gradient text.",
+      "Ausência total de tons roxos, halos luminosos ociosos ou bordas decorativas excessivas."
+    ],
+    "rules": [
+      { "name": "The Zero-Purple Rule", "body": "Proibição estrita de qualquer tom roxo, magenta saturado ou gradientes violetas.", "section": "colors" },
+      { "name": "The Functional Accent Rule", "body": "Cores de acento cobalto e azul ocupam menos de 8% da superfície da tela.", "section": "colors" },
+      { "name": "The No-Eyebrow Rule", "body": "Títulos de seção e tópicos falam por si próprios; proíbe-se expressamente o uso de kickers ou eyebrows em cima de headings.", "section": "typography" },
+      { "name": "The Restful Surface Rule", "body": "Superfícies permanecem planas em repouso; a elevação só se manifesta em resposta consciente à interação humana.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do manter alto contraste de texto (mínimo 4.5:1 para corpo e 3:1 para títulos grandes).",
+      "Do utilizar tags funcionais com fontes mono para identificar tecnologias e competências.",
+      "Do respeitar as preferências de acessibilidade do usuário (prefers-reduced-motion).",
+      "Do estilizar superfícies nativas do navegador (::selection, :focus-visible, scrollbars)."
+    ],
+    "donts": [
+      "Don't utilizar qualquer matiz ou gradiente roxo.",
+      "Don't aplicar kickers ou subtítulos diminutos acima dos títulos principais.",
+      "Don't criar sombras com halo colorido ou sombras duras sem desfoque (box-shadow: 4px 4px 0).",
+      "Don't empregar emojis ou glifos genéricos como ícones de sistema; utilize SVGs desenhados em stroke consistente."
+    ]
+  }
+}

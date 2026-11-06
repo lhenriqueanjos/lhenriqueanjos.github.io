@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px;
+    height: 900px;
+    overflow: hidden;
+    background-color: #0F172A;
+    color: #F8FAFC;
+    font-family: 'Inter', sans-serif;
+    padding: 48px 80px;
+    background-image: linear-gradient(rgba(51, 65, 85, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(51, 65, 85, 0.2) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 40px;
+  }
+  .badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #38BDF8;
+    background: #1E293B;
+    border: 1px solid #334155;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  .badge-dot { width: 6px; height: 6px; background: #38BDF8; border-radius: 50%; box-shadow: 0 0 8px #38BDF8; }
+  nav a { color: #94A3B8; text-decoration: none; margin-left: 24px; font-size: 14px; }
+  nav a.active { color: #38BDF8; font-weight: 600; }
+  .grid-sys {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 48px;
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  h1 span { color: #38BDF8; }
+  p.sub { font-size: 17px; line-height: 1.6; color: #94A3B8; margin-bottom: 32px; }
+  .actions { display: flex; gap: 16px; }
+  .btn-sys {
+    background: #38BDF8;
+    color: #0F172A;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .btn-sys-outline {
+    border: 1px solid #334155;
+    color: #F8FAFC;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .board-panel {
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 24px;
+  }
+  .board-title { font-size: 12px; color: #94A3B8; text-transform: uppercase; margin-bottom: 16px; border-bottom: 1px solid #334155; padding-bottom: 8px; }
+  .module-card {
+    background: #0F172A;
+    border: 1px solid #334155;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  .module-card:last-child { margin-bottom: 0; }
+  .module-name { font-size: 14px; font-weight: 600; color: #F8FAFC; margin-bottom: 4px; }
+  .module-desc { font-size: 12px; color: #94A3B8; line-height: 1.4; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="mono" style="font-weight: 700; font-size: 16px;">[NOME PROFISSIONAL] // SYS-PROFILE</div>
+    <div class="badge-status mono">
+      <div class="badge-dot"></div>
+      STATUS: DISPONÍVEL P/ PROJETOS
+    </div>
+    <nav class="mono">
+      <a href="#overview" class="active">[01.overview]</a>
+      <a href="#experience">[02.experience]</a>
+      <a href="#education">[03.education]</a>
+      <a href="#skills">[04.skills]</a>
+      <a href="#contact">[05.contact]</a>
+    </nav>
+  </header>
+  <div class="grid-sys">
+    <div>
+      <div class="mono" style="color: #38BDF8; font-size: 13px; margin-bottom: 16px;">// ARQUITETURA DE SISTEMAS & ENGENHARIA DE SOFTWARE</div>
+      <h1>Engenharia estruturada com <span>rigor técnico</span>, resiliência e foco no objetivo.</h1>
+      <p class="sub">Especialista em construir soluções de software de alta confiabilidade, arquiteturas orientadas a eventos e pipelines automatizados de alto desempenho.</p>
+      <div class="actions mono">
+        <a href="#contact" class="btn-sys">&gt; ENVIAR MENSAGEM</a>
+        <a href="#experience" class="btn-sys-outline">&gt; VER HISTÓRICO</a>
+      </div>
+    </div>
+    <div class="board-panel">
+      <div class="board-title mono">Componentes de Atuação</div>
+      <div class="module-card">
+        <div class="module-name mono">01. Arquitetura Backend & Distribuída</div>
+        <div class="module-desc">Microsserviços, message brokers, caching distribuído e consistência eventual.</div>
+      </div>
+      <div class="module-card">
+        <div class="module-name mono">02. Rigor de Qualidade & CI/CD</div>
+        <div class="module-desc">Automação de testes, linters estritos, cobertura e verificação estática.</div>
+      </div>
+      <div class="module-card">
+        <div class="module-name mono">03. Plataforma & AI Engineering</div>
+        <div class="module-desc">Agentes autônomos, orquestração de LLMs e integração segura de ferramentas.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

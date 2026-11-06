@@ -1,0 +1,100 @@
+{
+  "title": "Escolha do Mundo Visual — Direções Familiares (Safer)",
+  "question": "Rodada 1 (Safer Register): Escolha entre as direções convencionais fundamentadas ou o padrão de mercado.",
+  "options": [
+    {
+      "id": "grounded-monograph",
+      "kind": "grounded",
+      "label": "Architectural Folio & Precision Grid",
+      "lineage": "monografias técnicas suíças e manuais de engenharia de sistemas",
+      "thesis": "Transmite seriedade máxima, método e clareza analítica através de um grid arquitetônico rígido, réguas de separação e tipografia neogrotesca sóbria.",
+      "palette": [
+        "#F4F4F5",
+        "#18181B",
+        "#E4E4E7",
+        "#0284C7"
+      ],
+      "materials": [
+        "architectural grid",
+        "hairline rules",
+        "technical metadata tables"
+      ],
+      "viewport": "Grid estrutural de 12 colunas; cabeçalho com coordenadas de carreira; dados de formação e experiência dispostos em tabelas tabulares de alta precisão.",
+      "risk": "Pode transmitir austeridade excessiva se a narrativa do perfil for estritamente formal.",
+      "html": ".impeccable/mocks/decision/grounded-monograph.html"
+    },
+    {
+      "id": "grounded-journal",
+      "kind": "grounded",
+      "label": "Research Paper & Academic Journal",
+      "lineage": "publicações científicas de computação e journals acadêmicos",
+      "thesis": "Foco total na credibilidade intelectual e rigor de conteúdo, com tipografia clássica de leitura profunda, sumário estruturado e notas de rodapé funcionais.",
+      "palette": [
+        "#FAF9F6",
+        "#1C1917",
+        "#E7E5E4",
+        "#0D9488"
+      ],
+      "materials": [
+        "archival paper",
+        "serif reading typography",
+        "marginal notes"
+      ],
+      "viewport": "Coluna central de leitura com índice lateral fixo; seções de formação acadêmica e competências em destaque com formatação editorial.",
+      "risk": "Menos orientado a dinamismo visual moderno, focado prioritariamente na profundidade da leitura.",
+      "html": ".impeccable/mocks/decision/grounded-journal.html"
+    },
+    {
+      "id": "grounded-blueprint",
+      "kind": "grounded",
+      "label": "Engineering Systems Board",
+      "lineage": "dashboards e diagramas de arquitetura de software e sistemas distribuídos",
+      "thesis": "Abordagem orientada à engenharia pura: fundo slate escuro técnico, blocos de arquitetura modulares e tags funcionais de competência.",
+      "palette": [
+        "#0F172A",
+        "#F8FAFC",
+        "#334155",
+        "#38BDF8"
+      ],
+      "materials": [
+        "blueprint dark grid",
+        "system architecture cards",
+        "status badges"
+      ],
+      "viewport": "Cabeçalho com indicador de status; blocos de experiência estruturados como componentes de arquitetura; dados de competências categorizados.",
+      "risk": "Focado intensamente em avaliadores técnicos e gestores de engenharia.",
+      "html": ".impeccable/mocks/decision/grounded-blueprint.html"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Padrão Corporativo Tradicional",
+    "thesis": "O layout corporativo tradicional de portfólio tech, executado com acabamento de primeiro nível.",
+    "palette": [
+      "#FFFFFF",
+      "#0F172A",
+      "#E2E8F0",
+      "#2563EB"
+    ],
+    "materials": [
+      "standard 2-col hero",
+      "resume timeline list",
+      "pill skill tags"
+    ],
+    "viewport": "Hero padrão com apresentação e botões de ação, seguido por timeline vertical de experiência e lista de competências em badges.",
+    "risk": "Familiar e seguro, porém indistinguível de perfis convencionais de mercado.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

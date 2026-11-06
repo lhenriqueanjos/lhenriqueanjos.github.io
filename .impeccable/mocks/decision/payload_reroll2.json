@@ -1,0 +1,155 @@
+{
+  "title": "Escolha do Mundo Visual — Direções Arrojadas (Bolder)",
+  "question": "Rodada 2 (Bolder Register): O sorteio definiu 'Glazier Colorfield Partition'. Escolha a líder sorteada, uma alternativa de alto compromisso ou o padrão de mercado.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Glazier Colorfield Partition",
+      "kicker": "THE ROLL",
+      "lineage": "divisória de vidro emoldurada em aço e painéis iluminados de oficina de vidraceiro",
+      "thesis": "Transmite sofisticação, precisão construtiva e clareza estrutural com uma grelha de aço escuro onde cada quadrante é um painel fosco ou claro que se ilumina com acento mineral ao foco.",
+      "palette": [
+        "#111315",
+        "#F4F4F6",
+        "#2B303A",
+        "#0284C7"
+      ],
+      "materials": [
+        "steel glazing bars",
+        "seeded glass panels",
+        "cobalt backlighting"
+      ],
+      "viewport": "Elevação arquitetônica de aço escuro com painéis translúcidos; cada quadrante abriga uma dimensão da carreira (bio, experiência, formação, competências); iluminação sutil de fundo ao navegar.",
+      "risk": "Exige rigor estrito de alinhamento no grid de CSS para manter a sensação de vidro e metal legítimos.",
+      "raised": [
+        {
+          "from": "signals-instruments-night-flight-six-pack",
+          "raise": "Módulos de competência e telemetria profissional com precisão de painel de controle."
+        }
+      ],
+      "html": ".impeccable/mocks/decision/assigned_bolder.html"
+    },
+    {
+      "id": "challenger-six-pack",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-night-flight-six-pack",
+      "label": "Night Flight Instrument Six-Pack",
+      "verdict": "competitive",
+      "lineage": "painel de instrumentos de voo noturno de pequenas aeronaves",
+      "thesis": "A confiança máxima transmitida por seis mostradores analíticos trabalhando em perfeita concordância: fundo preto mate, tipografia técnica nítida e indicadores em verde radium.",
+      "palette": [
+        "#0A0D12",
+        "#E2E8F0",
+        "#1E293B",
+        "#10B981"
+      ],
+      "materials": [
+        "matte black panel",
+        "luminous dials",
+        "radium green indicators"
+      ],
+      "viewport": "Constelação calibrada de 6 módulos de alto impacto (perfil, trajetória de engenharia, métricas de liderança, stack técnica, formação e canal de contato direto).",
+      "case": "Combina com perfeição seriedade inabalável, inteligência e ausência de elementos ociosos; confere uma autoridade técnica inquestionável.",
+      "risk": "A metáfora de instrumentação aeronáutica é muito marcante para quem busca um formato de currículo estritamente tradicional.",
+      "html": ".impeccable/mocks/decision/challenger-six-pack.html",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack-hero.webp"
+    },
+    {
+      "id": "challenger-pc98",
+      "kind": "challenger",
+      "catalogId": "digital-design-canon-pc98-sixteen-color-field",
+      "label": "PC-98 Sixteen-Color Architecture",
+      "verdict": "competitive",
+      "lineage": "computação gráfica clássica japonesa de 16 cores com dithering cruzado",
+      "thesis": "A disciplina da computação técnica pura: paleta estrita sem gradientes artificiais, dithering milimétrico, caixas chanfradas de dados e tipografia técnica de máxima legibilidade.",
+      "palette": [
+        "#050811",
+        "#D1D5DB",
+        "#1B2A4A",
+        "#38BDF8"
+      ],
+      "materials": [
+        "crosshatched dither",
+        "beveled system windows",
+        "crisp technical typography"
+      ],
+      "viewport": "Console estruturado com janelas chanfradas de alta precisão contendo o sumário executivo, cronologia e competências categorizadas sem poluição visual.",
+      "case": "Evoca paixão genuína por computação, engenharia de baixo nível e software de alta performance.",
+      "risk": "O apelo estético retrô pode parecer excessivamente nostálgico para recrutadores corporativos generalistas.",
+      "html": ".impeccable/mocks/decision/challenger-pc98.html",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-pc98-sixteen-color-field-hero.webp"
+    },
+    {
+      "id": "challenger-canopy",
+      "kind": "challenger",
+      "catalogId": "generative-art-computational-color-chord-counterpoint",
+      "label": "Computational Color Counterpoint",
+      "verdict": "declined",
+      "lineage": "dossel de faixas de seda em pátio com acordes de cores sobrepostas",
+      "palette": [
+        "#FAF9F6",
+        "#1E1B4B",
+        "#D97706"
+      ],
+      "materials": [
+        "translucent banners",
+        "color chord states"
+      ],
+      "case": "Conceito têxtil e artístico muito distante da sobriedade exigida pelo perfil profissional.",
+      "kept": "Camadas coordenadas de dados sobrepostas com clareza não destrutiva.",
+      "hero": "https://impeccable.style/worlds/cards/generative-art-computational-color-chord-counterpoint-hero.webp"
+    },
+    {
+      "id": "challenger-ebru",
+      "kind": "challenger",
+      "catalogId": "medium-native-ebru-floated-pigment",
+      "label": "Ebru Floated Pigment",
+      "verdict": "declined",
+      "lineage": "banho de pigmento flutuante e marmorização em papel",
+      "palette": [
+        "#1C1917",
+        "#D6D3D1",
+        "#0284C7"
+      ],
+      "materials": [
+        "viscous liquid",
+        "combed pigment"
+      ],
+      "case": "Metáfora orgânica e fluida sem correspondência direta com engenharia de software metódica.",
+      "kept": "Reatividade fluida a eventos de scroll e interação suave.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-ebru-floated-pigment-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Padrão Corporativo Tradicional",
+    "thesis": "O layout corporativo tradicional de portfólio tech, executado com acabamento de primeiro nível.",
+    "palette": [
+      "#FFFFFF",
+      "#0F172A",
+      "#E2E8F0",
+      "#2563EB"
+    ],
+    "materials": [
+      "standard 2-col hero",
+      "resume timeline list",
+      "pill skill tags"
+    ],
+    "viewport": "Hero padrão com apresentação e botões de ação, seguido por timeline vertical de experiência e lista de competências em badges.",
+    "risk": "Familiar e seguro, porém indistinguível de perfis convencionais de mercado.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

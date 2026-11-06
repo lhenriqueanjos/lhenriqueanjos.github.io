@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px;
+    height: 900px;
+    overflow: hidden;
+    background-color: #0A0D12;
+    color: #E2E8F0;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 80px;
+  }
+  .mono { font-family: 'Share Tech Mono', monospace; }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1E293B;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  .callsign { font-size: 18px; color: #10B981; letter-spacing: 0.1em; }
+  nav a { color: #64748B; text-decoration: none; margin-left: 24px; font-size: 13px; letter-spacing: 0.05em; }
+  nav a.active { color: #10B981; border-bottom: 1px solid #10B981; }
+  .flight-deck {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .intro-text h1 {
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #F8FAFC;
+  }
+  .intro-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #94A3B8;
+    margin-bottom: 28px;
+  }
+  .contact-btn {
+    display: inline-block;
+    background: #10B981;
+    color: #0A0D12;
+    padding: 12px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+  }
+  .six-pack-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .gauge-box {
+    background: #0E131B;
+    border: 2px solid #1E293B;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.6);
+  }
+  .gauge-dial {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #334155;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #07090D;
+  }
+  .gauge-val { font-size: 22px; font-weight: 700; color: #10B981; }
+  .gauge-unit { font-size: 10px; color: #64748B; }
+  .gauge-needle {
+    position: absolute;
+    width: 2px;
+    height: 38px;
+    background: #10B981;
+    top: 6px;
+    transform-origin: bottom center;
+    transform: rotate(35deg);
+    box-shadow: 0 0 6px #10B981;
+  }
+  .gauge-title { font-size: 11px; text-transform: uppercase; color: #94A3B8; letter-spacing: 0.08em; }
+  .gauge-meta { font-size: 11px; color: #64748B; margin-top: 4px; }
+</style>
+</head>
+<body>
+  <header class="mono">
+    <div class="callsign">[NOME DO PROFISSIONAL] // FLIGHT-DECK INSTRUMENTATION</div>
+    <nav>
+      <a href="#apresentacao" class="active">[01.STATUS]</a>
+      <a href="#trajetoria">[02.TRAJETÓRIA]</a>
+      <a href="#formacao">[03.FORMAÇÃO]</a>
+      <a href="#habilidades">[04.HABILIDADES]</a>
+      <a href="#contato">[05.CONTATO]</a>
+    </nav>
+  </header>
+  <div class="flight-deck">
+    <div class="intro-text">
+      <div class="mono" style="color: #10B981; font-size: 12px; margin-bottom: 12px;">// CONFIABILIDADE EM AMBIENTES CRÍTICOS</div>
+      <h1>Seis mostradores em perfeito acordo. Precisão absoluta sem atalhos.</h1>
+      <p>Engenharia de software concebida com disciplina de instrumentação de voo. Sistemas estáveis, observabilidade em tempo real e arquitetura distribuída resiliente a qualquer turbulência.</p>
+      <a href="#contato" class="contact-btn mono">&gt; ESTABELECER COMUNICAÇÃO</a>
+    </div>
+    <div class="six-pack-grid mono">
+      <div class="gauge-box">
+        <div class="gauge-dial">
+          <div class="gauge-needle"></div>
+          <div class="gauge-val">10+</div>
+          <div class="gauge-unit">ANOS</div>
+        </div>
+        <div class="gauge-title">Experiência</div>
+        <div class="gauge-meta">Engenharia Sênior</div>
+      </div>
+      <div class="gauge-box">
+        <div class="gauge-dial">
+          <div class="gauge-val" style="color: #38BDF8;">99.9%</div>
+          <div class="gauge-unit">UPTIME</div>
+        </div>
+        <div class="gauge-title">Confiabilidade</div>
+        <div class="gauge-meta">Sistemas Críticos</div>
+      </div>
+      <div class="gauge-box">
+        <div class="gauge-dial">
+          <div class="gauge-val" style="color: #F59E0B;">CS</div>
+          <div class="gauge-unit">GRAU</div>
+        </div>
+        <div class="gauge-title">Formação</div>
+        <div class="gauge-meta">Ciência da Computação</div>
+      </div>
+      <div class="gauge-box">
+        <div class="gauge-dial">
+          <div class="gauge-val">DIST</div>
+          <div class="gauge-unit">ARCH</div>
+        </div>
+        <div class="gauge-title">Arquitetura</div>
+        <div class="gauge-meta">Sistemas Distribuídos</div>
+      </div>
+      <div class="gauge-box">
+        <div class="gauge-dial">
+          <div class="gauge-val" style="color: #10B981;">CORE</div>
+          <div class="gauge-unit">STACK</div>
+        </div>
+        <div class="gauge-title">Competências</div>
+        <div class="gauge-meta">TS / Go / Python</div>
+      </div>
+      <div class="gauge-box">
+        <div class="gauge-dial">
+          <div class="gauge-val" style="color: #10B981;">OK</div>
+          <div class="gauge-unit">STATUS</div>
+        </div>
+        <div class="gauge-title">Disponibilidade</div>
+        <div class="gauge-meta">Consultoria & Lead</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site profissional e portfólio de engenharia de software, arquitetura de sistemas e liderança técnica.">
+  <title>[Seu Nome] — Engenheiro de Software & Líder Técnico</title>
+
+  <!-- Tipografia: Epilogue (Display expressivo) & Figtree (Texto editorial) & Fira Code (Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Acessibilidade: Atalho de teclado para o conteúdo principal -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Canvas de partículas reativas em segundo plano -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="content-wrapper">
+    <!-- Cabeçalho & Navegação Fixa -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#inicio" class="brand-link" aria-label="Voltar ao início">
+          <div class="brand-symbol" aria-hidden="true">SN</div>
+          <div class="brand-info">
+            <span class="brand-name">[Seu Nome Completo]</span>
+            <span class="brand-title">Líder Técnico & Engenheiro de Software</span>
+          </div>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="nav-desktop" aria-label="Navegação principal">
+          <a href="#sobre" class="nav-link active">Sobre</a>
+          <a href="#experiencia" class="nav-link">Experiência</a>
+          <a href="#formacao" class="nav-link">Formação</a>
+          <a href="#competencias" class="nav-link">Competências</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+
+        <!-- Botão Menu Mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Menu Mobile Drawer -->
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação mobile">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#formacao">Formação</a>
+        <a href="#competencias">Competências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content">
+      <!-- Seção Hero / Apresentação -->
+      <section id="inicio" class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div id="sobre">
+              <div class="status-badge">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Disponível para projetos selecionados e liderança técnica</span>
+              </div>
+
+              <h1>Construindo software de alto rendimento com rigor, método e visão arquitetônica.</h1>
+
+              <p class="lead">
+                Engenheiro de software especializado no design de sistemas distribuídos, arquitetura resiliente e qualidade de código comprovável. Foco em resolver problemas complexos com soluções limpas, testadas e de alta longevidade.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#contato" class="btn btn-primary">Iniciar Contato</a>
+                <a href="#experiencia" class="btn btn-secondary">Ver Trajetória Profissional</a>
+              </div>
+            </div>
+
+            <!-- Card Destaque Executivo / Telemetria -->
+            <div class="hero-card" aria-label="Resumo do perfil profissional">
+              <div class="hero-card-header">
+                <span class="hero-card-label">Matriz Executiva</span>
+                <span class="hero-card-code">SYS-STATUS: 2026.1</span>
+              </div>
+
+              <div class="fact-list">
+                <div class="fact-item">
+                  <span class="fact-label">Especialidade Central</span>
+                  <span class="fact-value">Sistemas Distribuídos & Backend</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Tempo de Atuação</span>
+                  <span class="fact-value">10+ anos de experiência contínua</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Formação Base</span>
+                  <span class="fact-value">Ciência da Computação / Engenharia</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Modelo de Trabalho</span>
+                  <span class="fact-value">Remoto Global &bull; Brasil</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Princípio Fundamental</span>
+                  <span class="fact-value">Substância sobre ruído</span>
+                </div>
+              </div>
+
+              <div class="hero-card-tags" aria-label="Tecnologias principais">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Go</span>
+                <span class="tag">Python</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Distributed Systems</span>
+                <span class="tag">Event-Driven</span>
+                <span class="tag">Agentic AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Experiência Profissional -->
+      <section id="experiencia" class="container" style="padding-top: 2rem;">
+        <h2>Trajetória Profissional</h2>
+        <p class="section-desc">Histórico de atuação técnica liderando desenvolvimento, escalabilidade e qualidade de sistemas de missão crítica.</p>
+
+        <div class="timeline">
+          <!-- Posição 1 (Placeholder) -->
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">2022 — Presente</span>
+              <span class="timeline-location">São Paulo, Brasil &bull; Remoto</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="card-role">Líder Técnico & Arquiteto de Software Sênior</h3>
+              <div class="card-company">[Nome da Empresa Atual / Mais Recente]</div>
+              <p class="card-text">
+                Liderança técnica de times multidisciplinares de engenharia responsáveis pelo core da plataforma. Definição de padrões de arquitetura, governança de código e redução sistemática de débito técnico.
+              </p>
+              <ul class="card-highlights">
+                <li>Desenvolvimento de arquitetura orientada a microsserviços com processamento assíncrono de milhões de transações diárias.</li>
+                <li>Implementação de pipelines rigorosos de CI/CD, testes automatizados e métricas de observabilidade com 99.98% de disponibilidade.</li>
+                <li>Mentoria técnica direta de engenheiros pleno e sênior, promovendo cultura de excelência e destilação de requisitos.</li>
+              </ul>
+              <div class="card-techs">
+                <span class="tag">Go</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Posição 2 (Placeholder) -->
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">2019 — 2022</span>
+              <span class="timeline-location">Remoto</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="card-role">Engenheiro de Software Sênior</h3>
+              <div class="card-company">[Nome da Empresa Anterior]</div>
+              <p class="card-text">
+                Design e implementação de APIs resilientes de alta vazão e refatoração de sistemas legados monolíticos para serviços modulares desacoplados.
+              </p>
+              <ul class="card-highlights">
+                <li>Otimização de consultas em bancos relacionais e modelagem de estratégias de cache com Redis, reduzindo latência em 40%.</li>
+                <li>Criação de ferramentas internas e bibliotecas compartilhadas adotadas por múltiplas equipes de produto.</li>
+              </ul>
+              <div class="card-techs">
+                <span class="tag">Node.js</span>
+                <span class="tag">Python</span>
+                <span class="tag">Redis</span>
+                <span class="tag">AWS</span>
+                <span class="tag">GraphQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Posição 3 (Placeholder) -->
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">2016 — 2019</span>
+              <span class="timeline-location">Brasil</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="card-role">Engenheiro de Software Pleno</h3>
+              <div class="card-company">[Primeira Empresa / Experiência Formativa]</div>
+              <p class="card-text">
+                Desenvolvimento full stack de aplicações web corporativas, modelagem de banco de dados e automação de rotinas de integração de dados.
+              </p>
+              <ul class="card-highlights">
+                <li>Construção de interfaces performáticas e acessíveis integradas a serviços RESTful seguros.</li>
+                <li>Adoção inicial de testes unitários e de integração na base de código legada.</li>
+              </ul>
+              <div class="card-techs">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Linux</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Seção de Formação Acadêmica & Certificações -->
+      <section id="formacao" class="container" style="padding-top: 2rem;">
+        <h2>Formação Acadêmica & Credenciais</h2>
+        <p class="section-desc">Fundamentos teóricos e certificações que sustentam a prática metódica da engenharia de software.</p>
+
+        <div class="education-grid">
+          <!-- Formação 1 (Placeholder) -->
+          <div class="edu-card">
+            <div>
+              <div class="edu-period">2020 — 2022</div>
+              <h3 class="edu-degree">Pós-Graduação / Especialização em Arquitetura de Software</h3>
+              <div class="edu-institution">[Nome da Universidade / Instituição de Ensino Superior]</div>
+              <p class="edu-details">
+                Foco aprofundado em sistemas de alta escalabilidade, tolerância a falhas, design de microsserviços e computação em nuvem distribuída.
+              </p>
+            </div>
+          </div>
+
+          <!-- Formação 2 (Placeholder) -->
+          <div class="edu-card">
+            <div>
+              <div class="edu-period">2012 — 2016</div>
+              <h3 class="edu-degree">Bacharelado em Ciência da Computação</h3>
+              <div class="edu-institution">[Nome da Faculdade / Universidade Federal ou Estadual]</div>
+              <p class="edu-details">
+                Formação sólida em estruturas de dados, análise de algoritmos, sistemas operacionais, compiladores e redes de computadores.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certificações (Placeholder) -->
+          <div class="edu-card">
+            <div>
+              <div class="edu-period">Certificação Técnica</div>
+              <h3 class="edu-degree">AWS Certified Solutions Architect &bull; Professional</h3>
+              <div class="edu-institution">Amazon Web Services</div>
+              <p class="edu-details">
+                Validação de competência em desenho de arquiteturas robustas, seguras, escaláveis e com custo otimizado na nuvem.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certificação 2 (Placeholder) -->
+          <div class="edu-card">
+            <div>
+              <div class="edu-period">Certificação Técnica</div>
+              <h3 class="edu-degree">Certified Kubernetes Administrator (CKA)</h3>
+              <div class="edu-institution">Cloud Native Computing Foundation (CNCF)</div>
+              <p class="edu-details">
+                Domínio prático em orquestração de contêineres, networking, armazenamento e gerenciamento de clusters em produção.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Matriz de Competências -->
+      <section id="competencias" class="container" style="padding-top: 2rem;">
+        <h2>Matriz de Competências</h2>
+        <p class="section-desc">Conjunto de habilidades técnicas, metodológicas e ferramentas dominadas na prática diária.</p>
+
+        <div class="skills-container">
+          <!-- Categoria 1 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3 class="category-title">Arquitetura & Engenharia Backend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill">Sistemas Distribuídos</span>
+              <span class="skill-pill">Microsserviços</span>
+              <span class="skill-pill">Event-Driven Architecture</span>
+              <span class="skill-pill">Design de APIs RESTful</span>
+              <span class="skill-pill">GraphQL & gRPC</span>
+              <span class="skill-pill">Message Queues & Event Streaming</span>
+              <span class="skill-pill">Clean Architecture / DDD</span>
+            </div>
+          </div>
+
+          <!-- Categoria 2 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="category-title">Linguagens & Tecnologias de Código</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill">TypeScript / JavaScript</span>
+              <span class="skill-pill">Go (Golang)</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">SQL Avançado</span>
+              <span class="skill-pill">HTML5 / CSS3 Semântico</span>
+              <span class="skill-pill">Bash / Shell Script</span>
+            </div>
+          </div>
+
+          <!-- Categoria 3 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="category-title">Bancos de Dados & Infraestrutura</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">Redis</span>
+              <span class="skill-pill">Apache Kafka / RabbitMQ</span>
+              <span class="skill-pill">Docker & Contêineres</span>
+              <span class="skill-pill">Kubernetes</span>
+              <span class="skill-pill">CI/CD Automatizado</span>
+              <span class="skill-pill">Observabilidade (Prometheus/Grafana)</span>
+            </div>
+          </div>
+
+          <!-- Categoria 4 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h3 class="category-title">Métodos, IA & Governança</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill">Test-Driven Development (TDD)</span>
+              <span class="skill-pill">Agentes & Fluxos Autônomos de IA</span>
+              <span class="skill-pill">Code Reviews Rigorosos</span>
+              <span class="skill-pill">Modelagem de Dados Resiliente</span>
+              <span class="skill-pill">Segurança de Aplicações</span>
+              <span class="skill-pill">Liderança & Mentoria Técnica</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Projetos em Destaque (Placeholder para expansão) -->
+      <section id="projetos" class="container" style="padding-top: 2rem;">
+        <h2>Projetos Selecionados</h2>
+        <p class="section-desc">Demonstração de competência através de código, arquitetura de sistemas e soluções de engenharia.</p>
+
+        <div class="projects-grid">
+          <!-- Projeto 1 (Placeholder) -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge">Arquitetura de Dados</span>
+              <h3 class="project-title">[Projeto 01: Engine Distribuída de Processamento]</h3>
+              <p class="project-desc">
+                Sistema modular em Go e Kafka para ingestão, validação e roteamento de eventos com throughput superior a 50k eventos/segundo e persistência otimizada.
+              </p>
+            </div>
+            <div class="project-footer">
+              <div class="card-techs">
+                <span class="tag">Go</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">Código &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 2 (Placeholder) -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge">Engenharia de IA</span>
+              <h3 class="project-title">[Projeto 02: Framework de Agentes Autônomos]</h3>
+              <p class="project-desc">
+                Plataforma de orquestração de modelos de linguagem para verificação formal de código, detecção de regressões de qualidade e governança arquitetônica.
+              </p>
+            </div>
+            <div class="project-footer">
+              <div class="card-techs">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">LLM APIs</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">Código &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Futura de Artigos & Blog (Placeholder) -->
+      <section id="publicacoes" class="container" style="padding-top: 2rem;">
+        <h2>Artigos & Conteúdo Técnico</h2>
+        <p class="section-desc">Espaço dedicado ao compartilhamento de aprendizados, análises arquiteturais e reflexões de engenharia.</p>
+
+        <div class="blog-preview-card">
+          <h3 class="blog-preview-title">Publicações em Breve</h3>
+          <p class="blog-preview-text">
+            Esta seção está preparada para receber artigos técnicos e estudos de caso. Os temas iniciais em produção incluem:
+          </p>
+          <div class="upcoming-topics">
+            <span class="tag">Resiliência em Sistemas Distribuídos</span>
+            <span class="tag">Engenharia sem Atalhos: Lições de Produção</span>
+            <span class="tag">Arquitetura de Software com Agentes LLM</span>
+            <span class="tag">Performance e Simplicidade na Web Clássica</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Contato Direto -->
+      <section id="contato" class="container" style="padding-top: 2rem;">
+        <h2>Iniciar Contato</h2>
+        <p class="section-desc">Canais diretos para oportunidades profissionais, liderança técnica, consultorias e discussões de arquitetura.</p>
+
+        <div class="contact-card">
+          <div>
+            <h3>Vamos conversar sobre seus desafios técnicos.</h3>
+            <p style="margin-top: 8px; margin-bottom: 24px;">
+              Estou à disposição para analisar projetos que demandem alto rigor arquitetônico, escalabilidade sólida e cultura de engenharia sem concessões.
+            </p>
+
+            <div class="contact-email-box">
+              <div class="email-row">
+                <span class="email-text" id="email-address" data-email="seu.email@exemplo.com">seu.email@exemplo.com</span>
+                <button type="button" class="btn-copy" id="copy-email-btn" aria-label="Copiar endereço de e-mail">Copiar E-mail</button>
+              </div>
+              <div class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div>
+            <span style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-primary);">Presença Digital Verificada</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          &copy; <span id="current-year">2026</span> [Seu Nome Completo]. Todos os direitos reservados.
+        </div>
+        <div class="footer-meta">
+          Construído com HTML5 &amp; CSS puro &bull; Hospedado no <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a> &bull; <a href="#inicio">Voltar ao topo &uarr;</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

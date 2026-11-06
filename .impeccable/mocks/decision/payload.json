@@ -1,0 +1,155 @@
+{
+  "title": "Escolha do Mundo Visual — Site Profissional",
+  "question": "O sorteio definiu 'Kinetic Dark Slate & Monospace Precision'. Mantenha a direção sorteada, escolha uma alternativa ou peça um novo sorteio.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Kinetic Dark Slate & Monospace Precision",
+      "kicker": "THE ROLL",
+      "lineage": "fusão de Classic Web com Dark Minimalism e partículas reativas ao scroll",
+      "thesis": "Transmite seriedade, inteligência e rigor técnico com fundo ardósia escuro de alto contraste, tipografia mono refinada e textura sutil de partículas reativas.",
+      "palette": [
+        "#0B0F14",
+        "#E2E8F0",
+        "#1E293B",
+        "#38BDF8"
+      ],
+      "materials": [
+        "dark slate ground",
+        "monospace accents",
+        "canvas particle field",
+        "hairline grid"
+      ],
+      "viewport": "Cabeçalho austero com status de disponibilidade; introdução concisa com tipografia de impacto; campo de partículas sutil em segundo plano; índice rápido de competências e marcos de carreira.",
+      "risk": "Exige espaçamento generoso e hierarquia tipográfica precisa para evitar ar puramente utilitário de terminal.",
+      "raised": [
+        {
+          "from": "operate-a-cutting-bench-select-rail",
+          "raise": "Trilho cronológico de marcos profissionais com precisão métrica de dados e datas."
+        },
+        {
+          "from": "light-shadow-caustics-rain-night-cityscape",
+          "raise": "Profundidade cromática no fundo escuro com contraste estrito WCAG AAA sem poluição visual."
+        }
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "Eclectic Modern Craft",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "design editorial contemporâneo com cartões semânticos e tipografia suíça (estilo Una)",
+      "thesis": "Combina autoridade executiva com acabamento visual moderno e expressivo, utilizando blocos de conteúdo escaneáveis e contraste mineral.",
+      "palette": [
+        "#F8F9FA",
+        "#1C1E21",
+        "#E5E7EB",
+        "#0F4C81"
+      ],
+      "materials": [
+        "mineral paper",
+        "asymmetric card grid",
+        "clean metadata badges"
+      ],
+      "viewport": "Apresentação executiva em bloco assimétrico; painel de competências com tags funcionais; cronologia em cards discretos de alto acabamento.",
+      "risk": "É a direção mais comum e familiar no ecossistema de design contemporâneo de tecnologia.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-hypercard",
+      "kind": "challenger",
+      "catalogId": "medium-native-hypercard-stack-shoebox",
+      "label": "Classic Web HyperCard",
+      "verdict": "competitive",
+      "lineage": "web clássica de hipertexto puro (estilo Jlord) e fichamento analítico",
+      "thesis": "Eliminação total de adornos supérfluos: texto preto sobre branco puro, links explícitos e máxima densidade informativa por segundo de leitura.",
+      "palette": [
+        "#FFFFFF",
+        "#111111",
+        "#E5E5E5",
+        "#1A56DB"
+      ],
+      "materials": [
+        "monochrome paper",
+        "pure hypertext",
+        "stipple borders"
+      ],
+      "viewport": "Página corrida estritamente tipográfica; links de navegação imediata no topo; seções divididas por linhas finas e notas estruturadas.",
+      "case": "Resgata a integridade e rapidez da web clássica da referência jlord.computer; perde ligeiramente na sofisticação interativa moderna.",
+      "risk": "Pode ser interpretado como simplista demais por recrutadores menos técnicos.",
+      "html": ".impeccable/mocks/decision/challenger-hypercard.html",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-hypercard-stack-shoebox-hero.webp"
+    },
+    {
+      "id": "challenger-cutting-bench",
+      "kind": "challenger",
+      "catalogId": "operate-a-cutting-bench-select-rail",
+      "label": "Cutting Bench Select Rail",
+      "verdict": "declined",
+      "lineage": "bancada de montagem cinematográfica e trilho de seleção perfurado",
+      "palette": [
+        "#000000",
+        "#FF6B00",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "perforated film",
+        "amber tape marks"
+      ],
+      "case": "Metáfora cinematográfica de montagem de filme não conecta com a sobriedade esperada para perfil técnico.",
+      "kept": "A precisão milimétrica de navegação cronológica e estados limpos.",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp"
+    },
+    {
+      "id": "challenger-cityscape",
+      "kind": "challenger",
+      "catalogId": "light-shadow-caustics-rain-night-cityscape",
+      "label": "Rain Nocturne Cityscape",
+      "verdict": "declined",
+      "lineage": "noturno urbano com reflexos de asfalto molhado e luzes de trânsito",
+      "palette": [
+        "#0B1017",
+        "#D1D5DB",
+        "#38BDF8"
+      ],
+      "materials": [
+        "wet asphalt reflections",
+        "transit vectors"
+      ],
+      "case": "Cenário visual excessivamente atmosférico e cenográfico; desvia da leitura objetiva do currículo.",
+      "kept": "Paleta noturna profunda de alto contraste para foco e legibilidade.",
+      "hero": "https://impeccable.style/worlds/cards/light-shadow-caustics-rain-night-cityscape-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Padrão Corporativo de Mercado",
+    "thesis": "O template corporativo padrão de currículo online com layout simétrico tradicional.",
+    "palette": [
+      "#FFFFFF",
+      "#1E293B",
+      "#2563EB"
+    ],
+    "materials": [
+      "standard grid",
+      "generic cards"
+    ],
+    "viewport": "Hero com foto redonda à esquerda, título à direita, e lista de cargos com bullets embaixo.",
+    "risk": "Genérico e indistinguível de milhares de perfis comuns.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

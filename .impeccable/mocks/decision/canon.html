@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px;
+    height: 900px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    color: #1E293B;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 80px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .nav-links a { color: #64748B; text-decoration: none; margin-left: 28px; font-size: 15px; }
+  .nav-links a.active { color: #2563EB; font-weight: 600; }
+  .container {
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .avatar-placeholder {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94A3B8;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .hero-text h1 { font-size: 40px; margin-bottom: 16px; color: #0F172A; }
+  .hero-text h2 { font-size: 20px; color: #2563EB; font-weight: 500; margin-bottom: 16px; }
+  .hero-text p { font-size: 16px; line-height: 1.6; color: #64748B; margin-bottom: 28px; }
+  .btn-cv {
+    background: #2563EB;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div style="font-size: 20px; font-weight: bold;">[NOME PROFISSIONAL]</div>
+    <div class="nav-links">
+      <a href="#about" class="active">Sobre</a>
+      <a href="#experience">Experiência</a>
+      <a href="#education">Educação</a>
+      <a href="#skills">Competências</a>
+      <a href="#contact">Contato</a>
+    </div>
+  </header>
+  <div class="container">
+    <div class="avatar-placeholder">[ Foto Perfil ]</div>
+    <div class="hero-text">
+      <h2>Olá, eu sou</h2>
+      <h1>[Nome do Profissional]</h1>
+      <p>Desenvolvedor de Software Sênior com ampla experiência em criação de sistemas para empresas de diversos portes. Especialista em entregar código limpo e resolver problemas de negócio com tecnologia.</p>
+      <a href="#contact" class="btn-cv">Baixar Currículo / Contato</a>
+    </div>
+  </div>
+</body>
+</html>

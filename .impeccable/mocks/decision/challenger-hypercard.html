@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px;
+    height: 900px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    color: #111111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 60px 100px;
+    line-height: 1.6;
+  }
+  header {
+    border-bottom: 2px solid #111111;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; }
+  .subtitle { font-size: 16px; color: #444444; }
+  nav { margin-top: 16px; font-size: 16px; }
+  nav a { color: #1A56DB; text-decoration: underline; margin-right: 20px; font-weight: 500; }
+  .content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+  }
+  .bio-section p { font-size: 18px; margin-bottom: 20px; color: #222222; }
+  .meta-box {
+    border: 1px dashed #666666;
+    padding: 24px;
+    background: #FAFAFA;
+  }
+  .meta-box h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 8px;
+  }
+  .meta-box ul { list-style: square; padding-left: 20px; font-size: 14px; }
+  .meta-box li { margin-bottom: 10px; }
+  .links-row { margin-top: 32px; }
+  .links-row a {
+    display: inline-block;
+    color: #1A56DB;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 24px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>[NOME DO PROFISSIONAL]</h1>
+      <div class="subtitle">Engenheiro de Software &bull; Especialista em Arquitetura de Sistemas</div>
+    </div>
+    <div style="font-family: monospace; font-size: 14px;">[Versão estática v1.0]</div>
+  </header>
+  <nav>
+    <a href="#sobre">/sobre</a>
+    <a href="#experiencia">/experiencia</a>
+    <a href="#formacao">/formacao</a>
+    <a href="#competencias">/competencias</a>
+    <a href="#contato">/contato</a>
+  </nav>
+  <div class="content-grid" style="margin-top: 40px;">
+    <div class="bio-section">
+      <p>Bem-vindo à minha página profissional. Desenvolvo sistemas computacionais com foco em clareza, alta eficiência e longevidade de código.</p>
+      <p>Acredito no poder da web fundamentada em hipertexto simples, acessível e sem artifícios desnecessários. Aqui você encontra meu currículo completo, formação acadêmica e histórico detalhado de projetos.</p>
+      <div class="links-row">
+        <a href="#experiencia">&rarr; Ler histórico de experiência profissional</a>
+        <a href="#contato">&rarr; Obter dados de contato direto</a>
+      </div>
+    </div>
+    <div class="meta-box">
+      <h2>Sumário Executivo</h2>
+      <ul>
+        <li><strong>Foco:</strong> Arquitetura de Software & Engenharia de Dados</li>
+        <li><strong>Formação:</strong> Graduação e Pós-graduação em Tecnologia</li>
+        <li><strong>Princípio:</strong> Simplicidade técnica e rigor operacional</li>
+        <li><strong>Status:</strong> Aberto a discussões técnicas e oportunidades</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

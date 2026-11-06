@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px;
+    height: 900px;
+    overflow: hidden;
+    background-color: #050811;
+    color: #D1D5DB;
+    font-family: 'Inter', sans-serif;
+    padding: 40px;
+    background-image: radial-gradient(#1B2A4A 15%, transparent 16%);
+    background-size: 8px 8px;
+  }
+  .pixel-font { font-family: 'VT323', monospace; }
+  .os-window {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #38BDF8;
+    background: #0B101E;
+    box-shadow: 6px 6px 0px #1B2A4A;
+    display: flex;
+    flex-direction: column;
+  }
+  .title-bar {
+    background: #1B2A4A;
+    border-bottom: 2px solid #38BDF8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title-text { color: #38BDF8; font-size: 20px; letter-spacing: 0.05em; }
+  .nav-tabs a {
+    color: #D1D5DB;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 2px 8px;
+  }
+  .nav-tabs a.active {
+    background: #38BDF8;
+    color: #050811;
+  }
+  .window-body {
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 48px;
+    flex: 1;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  h1 span { color: #38BDF8; }
+  p.summary {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #9CA3AF;
+    margin-bottom: 32px;
+  }
+  .btn-pixel {
+    display: inline-block;
+    border: 2px solid #38BDF8;
+    background: #1B2A4A;
+    color: #38BDF8;
+    padding: 8px 24px;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 4px 4px 0 #050811;
+  }
+  .dither-panel {
+    border: 2px solid #233554;
+    background: #0D1629;
+    padding: 24px;
+  }
+  .dither-title {
+    font-size: 18px;
+    color: #38BDF8;
+    border-bottom: 1px solid #233554;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+  .item-row {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .item-label { color: #60A5FA; font-weight: 500; font-size: 12px; }
+  .item-desc { color: #E5E7EB; margin-top: 2px; }
+</style>
+</head>
+<body>
+  <div class="os-window">
+    <div class="title-bar pixel-font">
+      <div class="title-text">[PROFESSIONAL-SYSTEM-PROFILE v16.0]</div>
+      <div class="nav-tabs">
+        <a href="#about" class="active">01:SOBRE</a>
+        <a href="#experience">02:CARREIRA</a>
+        <a href="#education">03:FORMAÇÃO</a>
+        <a href="#skills">04:SKILLS</a>
+        <a href="#contact">05:CONTATO</a>
+      </div>
+    </div>
+    <div class="window-body">
+      <div>
+        <div class="pixel-font" style="font-size: 22px; color: #38BDF8; margin-bottom: 8px;">// SYS_INFO: ENGENHARIA DE ALTA PERFORMANCE</div>
+        <h1>Computação sólida com <span>disciplina de 16 cores</span>, precisão e zero artifícios.</h1>
+        <p class="summary">Engenheiro de software especializado em arquitetura de alto rendimento, confiabilidade operacional e software bem fundamentado. Decisões técnicas com métricas e evidências comprovadas.</p>
+        <a href="#contact" class="btn-pixel pixel-font">&gt; INICIAR COMUNICAÇÃO</a>
+      </div>
+      <div class="dither-panel">
+        <div class="dither-title pixel-font">STATUS DE OPERAÇÃO // METADADOS</div>
+        <div class="item-row">
+          <div class="item-label">[FORMAÇÃO ACADÊMICA]</div>
+          <div class="item-desc">Ciência da Computação &bull; Sistemas Críticos</div>
+        </div>
+        <div class="item-row">
+          <div class="item-label">[TRAJETÓRIA TÉCNICA]</div>
+          <div class="item-desc">10+ anos liderando plataformas e backend escalável</div>
+        </div>
+        <div class="item-row">
+          <div class="item-label">[STACK PRINCIPAL]</div>
+          <div class="item-desc">TypeScript, Go, Python, Sistemas Distribuídos</div>
+        </div>
+        <div class="item-row">
+          <div class="item-label">[STATUS ATUAL]</div>
+          <div class="item-desc" style="color: #34D399;">Disponível para consultoria técnica e projetos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

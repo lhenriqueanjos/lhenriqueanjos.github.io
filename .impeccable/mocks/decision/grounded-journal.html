@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Inter:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px;
+    height: 900px;
+    overflow: hidden;
+    background-color: #FAF9F6;
+    color: #1C1917;
+    font-family: 'Merriweather', serif;
+    padding: 60px 120px;
+  }
+  header {
+    border-bottom: 1px solid #1C1917;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'Inter', sans-serif;
+  }
+  .pub-meta { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: #78716C; }
+  .nav-strip a { color: #1C1917; text-decoration: none; margin-left: 24px; font-size: 14px; font-weight: 500; }
+  .nav-strip a.active { color: #0D9488; font-weight: 600; text-decoration: underline; }
+  .article-frame {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 64px;
+  }
+  h1 {
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .byline {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #0D9488;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+  .abstract {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #292524;
+    margin-bottom: 32px;
+    font-weight: 300;
+  }
+  .margin-note {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #57534E;
+    border-left: 2px solid #D6D3D1;
+    padding-left: 20px;
+  }
+  .margin-note h3 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #1C1917;
+    margin-bottom: 10px;
+  }
+  .link-anchor {
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    color: #0D9488;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-right: 24px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="pub-meta">Documento de Carreira &bull; Perfil Técnico</div>
+    <div class="nav-strip">
+      <a href="#apresentacao" class="active">Apresentação</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#competencias">Competências</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </header>
+  <div class="article-frame">
+    <div>
+      <div class="byline">[NOME DO PROFISSIONAL] &mdash; Engenheiro de Software & Pesquisador</div>
+      <h1>Engenharia de software com rigor analítico, clareza conceitual e impacto mensurável.</h1>
+      <p class="abstract">Atuação dedicada ao desenvolvimento de sistemas computacionais de alto nível, fundamentada em princípios científicos de engenharia, arquiteturas escaláveis e métodos rigorosos de verificação.</p>
+      <div>
+        <a href="#experiencia" class="link-anchor">&rarr; Consultar histórico cronológico</a>
+        <a href="#formacao" class="link-anchor">&rarr; Ver credenciais acadêmicas</a>
+      </div>
+    </div>
+    <div class="margin-note">
+      <h3>Nota Marginal / Foco</h3>
+      <p>Este repositório documenta experiência comprovada em liderança de engenharia, design de bancos de dados, microsserviços e integração de modelos generativos a sistemas produtivos.</p>
+      <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #E7E5E4;">
+        <strong>Disponibilidade:</strong> Consultorias e papéis técnicos estratégicos.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
