@@ -1,7 +1,11 @@
 /**
- * Particles Background Simulation
- * Reage suavemente ao scroll da página e ao movimento do cursor.
- * Respeita preferências de acessibilidade (prefers-reduced-motion) e otimiza bateria quando a aba fica inativa.
+ * Particles Background Simulation — DeepSeek Harness Inspiration
+ * Rede de nós interativos com profundidade tridimensional (parallax),
+ * atração magnética e teia dinâmica que segue ativamente o cursor do mouse
+ * e reage com inércia suave à rolagem da página.
+ * 
+ * Respeita preferências de acessibilidade (prefers-reduced-motion)
+ * e pausa execução quando a aba está em segundo plano.
  */
 (function() {
   'use strict';
@@ -19,16 +23,25 @@
   let animationId = null;
   let isRunning = false;
 
-  // Parâmetros de física e interação
-  const PARTICLE_COUNT_DESKTOP = 45;
-  const PARTICLE_COUNT_MOBILE = 20;
-  const CONNECTION_DIST = 120;
-  const MOUSE_RADIUS = 100;
+  // Parâmetros de densidade e interação
+  const PARTICLE_COUNT_DESKTOP = 70;
+  const PARTICLE_COUNT_MOBILE = 32;
+  const CONNECTION_DIST = 135;
+  const MOUSE_RADIUS = 180;
+  const MOUSE_CONNECTION_DIST = 160;
 
   let lastScrollY = window.scrollY || window.pageYOffset;
   let scrollVelocity = 0;
   let targetScrollVelocity = 0;
-  let mouse = { x: -1000, y: -1000, isHovering: false };
+
+  // Estado do cursor
+  const mouse = {
+    x: -2000,
+    y: -2000,
+    targetX: -2000,
+    targetY: -2000,
+    isHovering: false
+  };
 
   class Particle {
     constructor() {
@@ -37,51 +50,69 @@
 
     reset(initial = false) {
       this.x = Math.random() * width;
-      this.y = initial ? Math.random() * height : (scrollVelocity > 0 ? height + 10 : -10);
-      this.baseRadius = Math.random() * 1.5 + 1.2; // 1.2px - 2.7px
+      this.y = initial ? Math.random() * height : (scrollVelocity > 0 ? height + 15 : -15);
+      
+      // Profundidade (z-depth de 0.4 a 1.0)
+      this.depth = 0.4 + Math.random() * 0.6;
+      
+      // Tamanho e opacidade proporcionais à profundidade
+      this.baseRadius = (1.0 + this.depth * 1.5); // 1.4px a 2.5px
       this.radius = this.baseRadius;
       
-      // Velocidades de repouso muito lentas e suaves
-      this.vx = (Math.random() - 0.5) * 0.4;
-      this.vy = (Math.random() - 0.5) * 0.4;
+      // Velocidade de deriva ambiente muito lenta
+      this.baseVx = (Math.random() - 0.5) * 0.35 * this.depth;
+      this.baseVy = (Math.random() - 0.5) * 0.35 * this.depth;
       
-      // Cores sutis (ardósia e cobalto mineral com baixa opacidade para não concorrer com texto)
-      const colors = [
-        'rgba(15, 76, 129, 0.22)',  // Cobalto arquitetônico
-        'rgba(2, 132, 199, 0.25)',  // Azul técnico
-        'rgba(100, 116, 139, 0.18)' // Ardósia suave
-      ];
-      this.color = colors[Math.floor(Math.random() * colors.length)];
+      // Velocidade dinâmica (impulso do mouse e scroll)
+      this.vx = 0;
+      this.vy = 0;
+
+      // Cores por camada: cobalto arquitetônico, azul técnico e ardósia mineral
+      const r = Math.random();
+      if (r < 0.45) {
+        this.baseColor = { r: 15, g: 76, b: 129, a: 0.22 * this.depth };   // Cobalto arquitetônico
+      } else if (r < 0.75) {
+        this.baseColor = { r: 2, g: 132, b: 199, a: 0.28 * this.depth };   // Azul técnico
+      } else {
+        this.baseColor = { r: 100, g: 116, b: 139, a: 0.18 * this.depth }; // Ardósia mineral
+      }
     }
 
     update() {
-      // Amortecimento suave da velocidade de scroll
-      this.y += this.vy + scrollVelocity * 0.4;
-      this.x += this.vx;
-
-      // Interação suave com o cursor do mouse
+      // 1. Atração magnética suave em direção ao cursor (seguir o cursor)
       if (mouse.isHovering) {
-        const dx = this.x - mouse.x;
-        const dy = this.y - mouse.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < MOUSE_RADIUS && dist > 0) {
-          const force = (1 - dist / MOUSE_RADIUS) * 1.2;
-          this.x += (dx / dist) * force;
-          this.y += (dy / dist) * force;
+        const dx = mouse.x - this.x;
+        const dy = mouse.y - this.y;
+        const dist = Math.hypot(dx, dy);
+
+        if (dist < MOUSE_RADIUS && dist > 2) {
+          // Força de atração proporcional à proximidade e profundidade
+          const force = (1 - dist / MOUSE_RADIUS) * 0.55 * this.depth;
+          this.vx += (dx / dist) * force;
+          this.vy += (dy / dist) * force;
         }
       }
 
-      // Reposicionar nas bordas da tela
-      if (this.x < -20) this.x = width + 20;
-      if (this.x > width + 20) this.x = -20;
-      if (this.y < -20) this.y = height + 20;
-      if (this.y > height + 20) this.y = -20;
+      // 2. Fricção e amortecimento das velocidades dinâmicas
+      this.vx *= 0.92;
+      this.vy *= 0.92;
+
+      // 3. Atualização de posição integrando deriva ambiente, velocidade do mouse e scroll com parallax
+      this.x += this.baseVx + this.vx;
+      this.y += this.baseVy + this.vy + (scrollVelocity * 0.45 * this.depth);
+
+      // 4. Efeito de contorno cíclico suave nas bordas
+      const margin = 20;
+      if (this.x < -margin) this.x = width + margin;
+      if (this.x > width + margin) this.x = -margin;
+      if (this.y < -margin) this.y = height + margin;
+      if (this.y > height + margin) this.y = -margin;
     }
 
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = this.color;
+      ctx.fillStyle = `rgba(${this.baseColor.r}, ${this.baseColor.g}, ${this.baseColor.b}, ${this.baseColor.a})`;
       ctx.fill();
     }
   }
@@ -91,8 +122,8 @@
     height = window.innerHeight;
     dpr = window.devicePixelRatio || 1;
 
-    canvas.width = width * dpr;
-    canvas.height = height * dpr;
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
     canvas.style.width = width + 'px';
     canvas.style.height = height + 'px';
 
@@ -113,14 +144,14 @@
     const currentScrollY = window.scrollY || window.pageYOffset;
     const delta = currentScrollY - lastScrollY;
     lastScrollY = currentScrollY;
-    
-    // Limitar velocidade máxima de impulso
-    targetScrollVelocity = Math.max(Math.min(delta * 0.12, 4), -4);
+
+    // Impulso suave de scroll com limite máximo
+    targetScrollVelocity = Math.max(Math.min(delta * 0.14, 5), -5);
   }
 
   function onMouseMove(e) {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
+    mouse.targetX = e.clientX;
+    mouse.targetY = e.clientY;
     mouse.isHovering = true;
   }
 
@@ -130,19 +161,43 @@
 
   function drawConnections() {
     const len = particles.length;
+
+    // 1. Conexões entre partículas vizinhas
     for (let i = 0; i < len; i++) {
+      const p1 = particles[i];
       for (let j = i + 1; j < len; j++) {
-        const dx = particles[i].x - particles[j].x;
-        const dy = particles[i].y - particles[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
+        const p2 = particles[j];
+        const dx = p1.x - p2.x;
+        const dy = p1.y - p2.y;
+        const dist = Math.hypot(dx, dy);
 
         if (dist < CONNECTION_DIST) {
-          const alpha = (1 - dist / CONNECTION_DIST) * 0.12;
+          const alpha = (1 - dist / CONNECTION_DIST) * 0.16 * Math.min(p1.depth, p2.depth);
           ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.moveTo(p1.x, p1.y);
+          ctx.lineTo(p2.x, p2.y);
           ctx.strokeStyle = `rgba(15, 76, 129, ${alpha})`;
-          ctx.lineWidth = 0.8;
+          ctx.lineWidth = 0.75;
+          ctx.stroke();
+        }
+      }
+    }
+
+    // 2. Conexões dinâmicas do cursor com as partículas próximas (estilo DeepSeek Harness)
+    if (mouse.isHovering) {
+      for (let i = 0; i < len; i++) {
+        const p = particles[i];
+        const dx = mouse.x - p.x;
+        const dy = mouse.y - p.y;
+        const dist = Math.hypot(dx, dy);
+
+        if (dist < MOUSE_CONNECTION_DIST) {
+          const alpha = (1 - dist / MOUSE_CONNECTION_DIST) * 0.28 * p.depth;
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.strokeStyle = `rgba(2, 132, 199, ${alpha})`;
+          ctx.lineWidth = 0.9;
           ctx.stroke();
         }
       }
@@ -154,15 +209,23 @@
 
     ctx.clearRect(0, 0, width, height);
 
-    // Amortecimento suave da velocidade de scroll com inércia
+    // Suavização do mouse com interpolação linear (inércia fluida)
+    if (mouse.isHovering) {
+      mouse.x += (mouse.targetX - mouse.x) * 0.18;
+      mouse.y += (mouse.targetY - mouse.y) * 0.18;
+    }
+
+    // Inércia de scroll suave
     scrollVelocity += (targetScrollVelocity - scrollVelocity) * 0.08;
     targetScrollVelocity *= 0.92;
 
+    // Atualização e renderização das partículas
     for (let i = 0; i < particles.length; i++) {
       particles[i].update();
       particles[i].draw();
     }
 
+    // Desenhar teia de conexões
     drawConnections();
 
     animationId = requestAnimationFrame(loop);
@@ -195,7 +258,7 @@
     }
   }
 
-  // Event Listeners
+  // Ouvintes de eventos
   window.addEventListener('resize', resize, { passive: true });
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('mousemove', onMouseMove, { passive: true });

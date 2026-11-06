@@ -234,19 +234,19 @@ p.lead {
   color: var(--text-primary);
 }
 
-.brand-symbol {
+.brand-prompt {
   width: 32px;
   height: 32px;
-  border: 1.5px solid var(--color-primary);
+  border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
+  font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--color-primary);
-  background: var(--bg-surface);
+  background: var(--bg-surface-subtle);
 }
 
 .brand-info {
@@ -469,30 +469,7 @@ p.lead {
   overflow: hidden;
 }
 
-.hero-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 16px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--border-subtle);
 }
-
-.hero-card-label {
-  font-family: var(--font-display);
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-primary);
-}
-
-.hero-card-code {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
 .fact-list {
   display: flex;
   flex-direction: column;
@@ -684,57 +661,117 @@ p.lead {
 }
 
 /* ==========================================================================
-   Seção de Formação Acadêmica & Certificações
+   Seção de Formação Acadêmica (Painel UFPR)
    ========================================================================== */
-.education-grid {
+.ufpr-frame {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
-}
-
-@media (min-width: 768px) {
-  .education-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.edu-card {
+  gap: 36px;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: 28px;
+  padding: 32px;
   box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
-.edu-period {
-  font-family: var(--font-mono);
+@media (min-width: 768px) {
+  .ufpr-frame {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    align-items: stretch;
+    padding: 40px;
+  }
+}
+
+.ufpr-photo-box {
+  width: 100%;
+  min-height: 280px;
+  background: var(--bg-surface-subtle);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 28px;
+  color: var(--text-secondary);
+}
+
+.ufpr-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ufpr-photo-icon {
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+
+.ufpr-photo-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.ufpr-photo-caption {
   font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.ufpr-info-period {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   color: var(--color-primary);
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-.edu-degree {
-  font-size: 1.15rem;
+.ufpr-info-degree {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  line-height: 1.25;
 }
 
-.edu-institution {
+.ufpr-info-inst {
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.ufpr-info-desc {
   font-size: 0.95rem;
   color: var(--text-secondary);
-  font-weight: 500;
-  margin-bottom: 14px;
+  line-height: 1.65;
+  margin-bottom: 16px;
 }
 
-.edu-details {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
+.ufpr-details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ufpr-details-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.ufpr-details-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 /* ==========================================================================
