@@ -166,17 +166,17 @@ Forma retangular com cantos suavemente lapidados:
 
 ### Buttons
 - **Shape:** Raio de 8px com tipografia de peso 600.
-- **Primary:** Fundo cobalto (#0F4C81), texto branco puro, padding de 12px 24px. Hover com elevação de 1px e escurecimento para #0A365D.
-- **Secondary:** Fundo branco (#FFFFFF), borda em #CBD5E1, texto #0F172A. Hover com borda em cobalto.
+- **Primary (Vidro Azul iPhone):** Gradiente cobalto-safira translúcido (`linear-gradient(135deg, rgba(15, 76, 129, 0.88), rgba(2, 132, 199, 0.78))`), `backdrop-filter: blur(16px) saturate(190%)`, borda superior com reflexo especular de luz branca (`rgba(255, 255, 255, 0.85)`), chanfro interno e dispersão suave cobalto. Texto branco puro com alto contraste.
+- **Secondary (Vidro Branco Translúcido):** Superfície translúcida líquida (`linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.42))`), `backdrop-filter: blur(16px) saturate(170%)`, borda superior em reflexo puro (#FFFFFF) e texto cobalto de alto contraste (> 8.5:1).
 
 ### Cards / Containers
-- **Corner Style:** 12px de raio.
-- **Background:** Branco puro (#FFFFFF) sobre o fundo mineral da página.
-- **Border:** 1px sólido em #E2E8F0.
+- **Corner Style:** 12px de raio lapidado.
+- **Background:** Vidro líquido translúcido (`linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.58))`) com `backdrop-filter: blur(20px) saturate(180%)`.
+- **Specular Rim Light (Bordas Refletindo Luz):** Borda superior em branco puro (#FFFFFF) simulando incidência de luz superior, chanfro interno iluminado (`inset 0 1.5px 1px 0 rgba(255, 255, 255, 0.95)`), reflexão interna difusa e sombra suave de contato.
 - **Internal Padding:** 28px a 48px com espaçamento interno generoso.
 
 ### Navigation
-- Barra sticky no topo com altura de 72px e efeito de desfoque sutil (backdrop-filter: blur(12px)). Links com indicador de página ativa sublinhado em cobalto.
+- Barra sticky no topo com altura de 72px e acabamento em vidro fosco (`backdrop-filter: blur(20px) saturate(180%)`), borda inferior translúcida e prompt de marca em micro-vidro chanfrado.
 
 ## Do's and Don'ts
 
