@@ -741,7 +741,7 @@ p.lead {
 
 .ufpr-photo-box {
   width: 100%;
-  min-height: 280px;
+  min-height: 180px;
   background: linear-gradient(135deg, rgba(241, 245, 249, 0.60) 0%, rgba(255, 255, 255, 0.45) 100%);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
