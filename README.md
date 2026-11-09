@@ -10,7 +10,6 @@ Este diretório contém o site profissional estático pessoal desenvolvido para 
 - PRODUCT.md: documento de verdade do produto contendo público, posicionamento, restrições e princípios estratégicos do site profissional.
 - DESIGN.md: especificação do design system com tokens visuais normativos, ramps tipográficos e diretrizes de identidade.
 - index.html: documento principal e página inicial do site profissional estático.
-- formulario.html: página descartável com formulário interativo de coleta e revisão de conteúdo com geração de markdown em tempo real.
 - deploy-local.sh: atalho na raiz para o script de Deploy Local (scripts/deploy-local.sh).
 - css/: subdiretório contendo as folhas de estilo e regras visuais da interface.
 - js/: subdiretório contendo os scripts de interatividade e o canvas de partículas responsivo ao scroll.
