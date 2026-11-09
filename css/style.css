@@ -1201,3 +1201,250 @@ p.lead {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* ==========================================================================
+   Architectural & Swiss Editorial Layout (Accepted from Variant 1)
+   ========================================================================== */
+.v1-main {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* Monumental Hero Headline (Baked: monumental) */
+.v1-hero-headline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  margin-bottom: 1.75rem;
+  max-width: 22ch;
+  font-size: clamp(2.85rem, 5.8vw, 4.25rem);
+}
+
+.v1-lead {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 65ch;
+  margin-bottom: 2.25rem;
+  border-left: 2px solid var(--color-primary);
+  padding-left: 1.25rem;
+}
+
+/* Architectural Spec Sheet Panel */
+.v1-spec-sheet {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  box-shadow: inset 0 2px 0 0 var(--color-primary), var(--shadow-md);
+  padding: 2rem;
+  position: relative;
+}
+
+.v1-spec-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.v1-spec-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.v1-spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px dashed var(--border-subtle);
+  padding-bottom: 0.5rem;
+}
+
+.v1-spec-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.v1-spec-val {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+/* Architectural Swiss Timeline */
+.v1-timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.v1-timeline-entry {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 768px) {
+  .v1-timeline-entry {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+.v1-year-datum {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.v1-year-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-top: 0.25rem;
+}
+
+.v1-role-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.v1-company-badge {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Swiss Matrix for Skills */
+.v1-swiss-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.v1-matrix-col {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 1.5rem;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.v1-matrix-col:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.v1-matrix-heading {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+
+/* ==========================================================================
+   Single-channel LinkedIn Contact Card (Accepted from Variant 1)
+   Baked parameters: card-alignment: center, action-scale: prominent
+   ========================================================================== */
+.v1-contact {
+  display: block;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  box-shadow: inset 0 2px 0 0 var(--color-primary), var(--shadow-md);
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.v1-contact-content {
+  margin: 0 auto;
+}
+
+.v1-contact-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.v1-contact-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 62ch;
+  margin: 0 auto 2rem;
+}
+
+.v1-contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.v1-linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--color-primary);
+  color: var(--text-inverse);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  padding: 0.95rem 1.85rem;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.v1-linkedin-btn:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--text-inverse);
+}
+
+.v1-linkedin-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
